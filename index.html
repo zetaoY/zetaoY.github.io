@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Linux命令详解" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/08/Linux命令详解/" class="article-date">
+  <time datetime="2019-01-08T05:12:04.000Z" itemprop="datePublished">2019-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/08/Linux命令详解/">Linux常见命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux命令详解"><a href="#Linux命令详解" class="headerlink" title="Linux命令详解"></a>Linux命令详解</h1><h2 id="Linux命令"><a href="#Linux命令" class="headerlink" title="Linux命令:"></a>Linux命令:</h2><p>​    ls /  查看系统根下目录</p>
+<p>​    ls    查看当前所处位置的目录</p>
+<p>​    ls ‘name’    查看当前目录下指定的name目录</p>
+<h2 id="Linux根目录结构"><a href="#Linux根目录结构" class="headerlink" title="Linux根目录结构"></a>Linux根目录结构</h2><h3 id="bin"><a href="#bin" class="headerlink" title="/bin:"></a><strong>/bin:</strong></h3><p>​            bin是Binary的缩写,这个目录存放着最经常使用的==命令==。</p>
+<p>​    /boot:    </p>
+<p>​            这里存放的是启动Linux时使用的一些==核心文件==,包括一些链接文件以及镜像文件。</p>
+<p>​    /dev:    </p>
+<p>​            dev是==Device(设备)==的缩写,该目录下存放的是==Linux的外部设备,==在Linux中访问设备的方式和访问文件的方式是相同的。</p>
+<h3 id="etc"><a href="#etc" class="headerlink" title="/etc:"></a><strong>/etc:</strong></h3><p>​            这个目录用来存放所有==系统管理==所需要的配置文件和子目录.</p>
+<p>​    /home:    </p>
+<p>​             ==用户的主目录==,在Linux中,每个用户都有一个自己的目录,一般该目录名是以用户的账号命名的.</p>
+<p>​    /lib:        </p>
+<p>​            这个目录里存放着系统最基本的==动态链接共享库==,其作用==类似于Windows里的DLL文件==,==几乎所有应用程序==都需要用到这个共享库</p>
+<p>​    /lost+found:</p>
+<p>​            这个目录一般情况下是==空目录==,除了==系统非法关机==后,这里会存放一些文件</p>
+<p>​    /media:</p>
+<p>​            Linux系统会自动识别一些设备,将==识别的设备挂载==到这个目录下.</p>
+<p>​    /mnt:    </p>
+<p>​            用户==临时挂载别的文件系统==的目录</p>
+<p>​    /opt:    </p>
+<p>​            主机==额外安装软件所存放==的目录,例如安装一个ORACLE数据库,默认为空</p>
+<p>​    /proc:    </p>
+<p>​            这是一个==虚拟目录==,是<strong>系统内存的映射</strong>,可以直接访问该目录来<strong>获取系统信息</strong></p>
+<p>​    /root:    </p>
+<p>​            该目录为系统管理员,<strong>超级权限用户的主目录</strong></p>
+<h3 id="sbin"><a href="#sbin" class="headerlink" title="/sbin:"></a><strong>/sbin:</strong></h3><p>​            s是Super User的意思,存放系统管理员所使用的系统管理程序</p>
+<p>​    /selinux:        </p>
+<p>​            这个目录是==当前系统==(CentOS)所特有的目录,<strong>类似于Window的防火墙</strong>,不过机制更为复杂,存放selinux相关的文件</p>
+<p>​    /src:    </p>
+<p>​            该目录存放一些服务启动之后<strong>需要提取的数据</strong></p>
+<p>​    /sys:    </p>
+<p>​            该目录安装了2.6内核中出现了一个<strong>文件系统sysfs</strong>,sysfs文件系统是继承3种文件系统的信息:分别是针对==进程信息的<strong>proc</strong>文件系统==、针对==设备的<strong>devfs</strong>文件系统==以及针对==伪终端的<strong>devpts</strong>文件系统，是内核设备树的直观反映。</p>
+<p>​    /tmp:    </p>
+<p>​            用于存放临时文件</p>
+<p>​    /usr:    </p>
+<p>​            这是一个==非常重要的目录==,用户很多应用程序和文件都放到这个目录下,<strong>类似于window下的program files目录</strong></p>
+<h3 id="usr-bin"><a href="#usr-bin" class="headerlink" title="/usr/bin:"></a><strong>/usr/bin:</strong></h3><p>​             <strong>系统用户</strong> 使用的<strong>应用程序</strong></p>
+<h3 id="usr-sbin"><a href="#usr-sbin" class="headerlink" title="/usr/sbin:"></a><strong>/usr/sbin:</strong></h3><p>​            超级用户使用的==比较高级的管理程序和系统守护程序==</p>
+<p>​    /usr/src:        </p>
+<p>​             ==内核源代码==默认的放置目录</p>
+<p>​    /var:    </p>
+<p>​            这个目录==存放着不断扩充的东西==,我们习惯将那些经常修改的目录放到这个目录下,包括各种<strong>日志文件</strong></p>
+<p>​    /run:    </p>
+<p>​            是一个==临时文件系统==,存储系统启动以来的信息。系统重启时，这个目录下的文件==应该被删除或清除==，系统上有/var/run,目录的话,应该让他指向run</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/08/Linux命令详解/" data-id="cjqnatrts0000hcvfyh7ov3vy" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/08/hello-world/" class="article-date">
+  <time datetime="2019-01-08T05:00:21.384Z" itemprop="datePublished">2019-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/08/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/08/hello-world/" data-id="cjqnatrty0001hcvfxlwwnvgj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Linux/" style="font-size: 10px;">Linux</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/08/Linux命令详解/">Linux常见命令</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
